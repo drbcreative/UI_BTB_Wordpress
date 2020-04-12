@@ -1,0 +1,66 @@
+.select2-container {
+	width: 100% !important;
+}
+
+.nav-tab-wrapper .nav-tab-active {
+	background-color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+
+.nav-tab-wrapper a:hover, .nav-tab-wrapper a:focus {
+	text-decoration: none !important;
+}
+
+.panel-body .pt_input {
+	padding: 2px 0;
+}
+
+.panel-body input[type="radio"], input[type="checkbox"] {
+	margin: 0px !important;
+}
+
+.card > div {
+	/* border: 1px solid #acacac; */
+	/* padding: 10px; */
+}
+
+.card .status-title {
+	display: block;
+	float: left;
+	font-weight: bold;
+}
+
+.card .status-value {
+	float: right;
+}
+
+.list-group-item .green {
+	display: block;
+	float: right;
+	margin: 5px;
+	width: 10px;
+	height: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: green;
+}
+
+.list-group-item .grey {
+	display: block;
+	float: right;
+	margin: 5px;
+	width: 10px;
+	height: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: grey;
+}
+
+.card .none {
+	border-bottom: none !important;
+	border-top: none !important;
+	border-right: none !important;
+
+}

@@ -32,20 +32,38 @@ header#header-container {
         margin-left: 2rem;
         font-size: 14px;
         font-family: $font-secondary;
+        font-weight: 300;
 
         &:hover {
           color: $color-accent;
         }
       }
-      a.social-link svg {
-        height: 20px;
-        color: $color-white;
-        transition: all .3s ease;
-        margin-left: 1rem;
+      .social-links {
+        margin-left: 2rem;
+        a.social-link {
+          display: inline-block;
+          position: relative;
+          width: 30px !important;
+          height: 30px;
+          border: 1px solid $color-white;
+          border-radius: 50px;
+          margin-left: .5rem;
 
-        &:hover {
-          color: $color-accent;
-          transition: all .3s ease;
+          svg {
+            max-height: 20px;
+            color: $color-white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        a.social-link, a.social-link svg {
+          &:hover {
+            color: $color-accent;
+            border-color: $color-accent;
+            transition: all .2s ease;
+          }
         }
       }
     }

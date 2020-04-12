@@ -81,24 +81,6 @@
 		"oAP": "/certifications.textClipping",
 		"oF": 0
 		},
-	"/css/build/theme-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/build/theme-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/css/build/theme-min.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/build/theme-min.css.map",
-		"oF": 0
-		},
 	"/css/src/modules/_all.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -315,7 +297,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/css/build/theme-min.css",
+		"oAP": "/css/build/theme.css",
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
@@ -1701,7 +1683,7 @@
 		},
 	"/img/about-bg@2x.jpg": {
 		"ft": 16384,
-		"iS": 66752,
+		"iS": 42943,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/about-bg@2x.jpg",
@@ -1710,42 +1692,118 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/about-img@2x.jpg": {
+	"/img/adult-peds-med-bg@2x.jpg": {
 		"ft": 16384,
-		"iS": 110451,
+		"iS": 542870,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/about-img@2x.jpg",
+		"oAP": "/img/adult-peds-med-bg@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/footer-bg@2x.jpg": {
+	"/img/aesthetics-img@2x.jpg": {
 		"ft": 16384,
-		"iS": 306988,
+		"iS": 319368,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/footer-bg@2x.jpg",
+		"oAP": "/img/aesthetics-img@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/footer-couple@2x.png": {
+	"/img/aesthetics-logo@2x.png": {
 		"ft": 32768,
-		"iS": 1354188,
+		"iS": 13039,
 		"oA": 0,
-		"oAP": "/img/footer-couple@2x.png",
+		"oAP": "/img/aesthetics-logo@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
+	"/img/appointment-img@2x.jpg": {
+		"ft": 16384,
+		"iS": 300616,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/appointment-img@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/arrow-down.png": {
+		"ft": 32768,
+		"iS": 299,
+		"oA": 0,
+		"oAP": "/img/arrow-down.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/arrow-down@2x.png": {
+		"ft": 32768,
+		"iS": 358,
+		"oA": 0,
+		"oAP": "/img/arrow-down@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/arrow-right.png": {
+		"ft": 32768,
+		"iS": 314,
+		"oA": 0,
+		"oAP": "/img/arrow-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/arrow-right@2x.png": {
+		"ft": 32768,
+		"iS": 320,
+		"oA": 0,
+		"oAP": "/img/arrow-right@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/btbha-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/btbha-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/dermatology-img@2x.jpg": {
+		"ft": 16384,
+		"iS": 233814,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/dermatology-img@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/footer-logo@2x.png": {
 		"ft": 32768,
-		"iS": 44076,
+		"iS": 15328,
 		"oA": 0,
 		"oAP": "/img/footer-logo@2x.png",
 		"oF": 0,
@@ -1754,20 +1812,9 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/form-bg@2x.jpg": {
-		"ft": 16384,
-		"iS": 73881,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/form-bg@2x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/img/hero-bg@2x.jpg": {
 		"ft": 16384,
-		"iS": 786947,
+		"iS": 275122,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/hero-bg@2x.jpg",
@@ -1778,7 +1825,7 @@
 		},
 	"/img/hero-logo@2x.png": {
 		"ft": 32768,
-		"iS": 38910,
+		"iS": 12047,
 		"oA": 0,
 		"oAP": "/img/hero-logo@2x.png",
 		"oF": 0,
@@ -1787,64 +1834,9 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/hormonereplacement-img@2x.png": {
-		"ft": 32768,
-		"iS": 742365,
-		"oA": 0,
-		"oAP": "/img/hormonereplacement-img@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/iconthreeforme-bg@2x.jpg": {
-		"ft": 16384,
-		"iS": 109480,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/iconthreeforme-bg@2x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/ivhrt-bg@2x.jpg": {
-		"ft": 16384,
-		"iS": 147428,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/ivhrt-bg@2x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/ivtherapy-img@2x.png": {
-		"ft": 32768,
-		"iS": 826392,
-		"oA": 0,
-		"oAP": "/img/ivtherapy-img@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/laserhairremoval-bg@2x.jpg": {
-		"ft": 16384,
-		"iS": 84354,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/laserhairremoval-bg@2x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/img/nav-dot.png": {
 		"ft": 32768,
-		"iS": 153,
+		"iS": 164,
 		"oA": 0,
 		"oAP": "/img/nav-dot.png",
 		"oF": 0,
@@ -1855,7 +1847,7 @@
 		},
 	"/img/nav-dot@2x.png": {
 		"ft": 32768,
-		"iS": 197,
+		"iS": 208,
 		"oA": 0,
 		"oAP": "/img/nav-dot@2x.png",
 		"oF": 0,
@@ -1864,91 +1856,48 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/nav-logo@2x.png": {
-		"ft": 32768,
-		"iS": 22682,
+	"/img/nutritional-bg@2x.jpg": {
+		"ft": 16384,
+		"iS": 357988,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/nav-logo@2x.png",
+		"oAP": "/img/nutritional-bg@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/white-bar@2x.png": {
+		"ft": 32768,
+		"iS": 115,
+		"oA": 0,
+		"oAP": "/img/white-bar@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/parallax-river@2x.jpg": {
+	"/img/womenscare-bg@2x.jpg": {
 		"ft": 16384,
-		"iS": 612793,
+		"iS": 260688,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/parallax-river@2x.jpg",
+		"oAP": "/img/womenscare-bg@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/placeholder.jpg": {
-		"ft": 16384,
-		"iS": 786947,
-		"jF": 0,
+	"/img/yellow-bar@2x.png": {
+		"ft": 32768,
+		"iS": 185,
 		"oA": 0,
-		"oAP": "/img/placeholder.jpg",
+		"oAP": "/img/yellow-bar@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"/img/priamry-care-bg@2x.jpg": {
-		"ft": 16384,
-		"iS": 88290,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/priamry-care-bg@2x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/priamry-care-img@2x.jpg": {
-		"ft": 16384,
-		"iS": 539070,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/priamry-care-img@2x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/quote.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/quote.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/skin-rejuvenation-bg@2x.jpg": {
-		"ft": 16384,
-		"iS": 190576,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/skin-rejuvenation-bg@2x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/testimonial-bg@2x.jpg": {
-		"ft": 16384,
-		"iS": 58394,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/testimonial-bg@2x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/index.php": {

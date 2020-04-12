@@ -96,7 +96,7 @@
   @include linkFade;
 
   &:hover {
-    color: $color-main;
+    color: $color-accent;
     text-decoration: none;
     @include linkFade;
   }

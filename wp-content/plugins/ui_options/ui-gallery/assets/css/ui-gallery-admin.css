@@ -1,0 +1,61 @@
+/*UI Gallery styles*/
+
+/*Backend*/
+
+#wpfooter{
+	position: relative;
+}
+
+.project_images_list_item{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.project_images_list_item img{
+    margin: 10px;
+    width: 100%;
+}
+
+.project_images_list_item {
+    margin: 10px;
+}
+
+.project_images_list_item:hover {
+    cursor: move;
+    cursor: -webkit-grabbing;
+    opacity: 0.7;
+}
+
+
+
+.project_image_fields {
+    float: left;
+    margin: 10px 0 0 20px;
+}
+.project_image_fields input, .project_image_fields textarea{
+    width: 100%;
+}
+.project_image_fields textarea{
+    min-height: 80px;
+}
+.project_images_list_cont{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.remove_Project_image_ico{
+    cursor:pointer;
+    padding: 5px;
+    border: solid 1px #ccc;
+    margin-top: 10px;
+    display: block;
+    float: left;
+}
+.remove_Project_image_ico:hover{
+    background: #ebebeb;
+}
+
+.wp-picker-container {
+    margin-left: 10px;
+}
+
+

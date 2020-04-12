@@ -1,0 +1,21 @@
+
+#rsvp-table .table {
+	width: 100%;
+}
+#rsvp-table td {
+	padding-left: 0;
+}
+
+#rsvp-table .table th {
+	text-align: left;
+}
+
+#rsvp-table .form-group {
+	float: left;
+	padding: 10px;
+}
+
+.field_required_msg {
+	display: inline;
+}
+

@@ -1,0 +1,30 @@
+#map {
+	height: 300px;
+	margin-top: 5px;
+}
+#map_all {
+	height: 300px;
+	margin-top: 5px;
+}
+
+#floating-panel {
+	margin-bottom: 5px;
+}
+
+#floating-panel #address {
+	width: 350px;
+}
+#floating-panel-front #address {
+	width: 100%;
+}
+
+#geometry {
+	margin-top: 5px;
+}
+.map_img {
+	float: left;
+	margin-right: 10px;
+	min-height: 100px;
+	min-width: 100px;
+	background-size: 100px 100px;
+}

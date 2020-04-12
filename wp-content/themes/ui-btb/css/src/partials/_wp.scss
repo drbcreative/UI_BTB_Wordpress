@@ -530,11 +530,14 @@ a#scroll {
   cursor: pointer;
   display: none;
   z-index: 99999999999;
-  background: $color-light-accent;
+  background: $color-main;
   padding: 15px;
   line-height: 0;
+  transition: all .2s ease;
   &:hover{
-    opacity: .6;
+    // opacity: .6;
+    background: $color-accent;
+    transition: all .2s ease;
   }
   svg {
     width: 30px;

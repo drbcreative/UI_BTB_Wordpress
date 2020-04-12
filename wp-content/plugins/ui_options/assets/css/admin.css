@@ -1,0 +1,22 @@
+/* Custom Admin CSS */
+@media (min-width: 576px) {
+  .bootstrap-wrapper .card{
+    padding: 0;
+    margin: 0 0 15px !important;
+  }
+
+  .card .card-title{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+  .bootstrap-wrapper p.submit{
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+  .bootstrap-wrapper .button.button-primary{
+    display: block;
+    width: 100%;
+    height: 45px;
+  }
+}

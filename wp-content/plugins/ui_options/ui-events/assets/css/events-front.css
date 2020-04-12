@@ -1,0 +1,11 @@
+button:focus {
+	outline:0 !important;
+}
+
+#EventRsvpFormRadio .rsvp_header, #EventRsvpFormRadio .rsvp_new_patient {
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+#EventRsvpFormRadio .alert {
+	margin-top: 40px;
+}

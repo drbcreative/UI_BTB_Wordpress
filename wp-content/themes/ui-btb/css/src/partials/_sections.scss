@@ -4,7 +4,7 @@
 // hero
 
 .hero {
-  background: url("../images/hero-bg@2x.jpg") top center / cover;
+  background: url("../../img/hero-bg@2x.jpg") top center / cover;
   position: relative;
   padding-top: 3rem;
   @include isMedium {
@@ -62,7 +62,7 @@
 
   .containerish {
     .about-us {
-      background: url("../images/about-bg@2x.jpg") center center / cover;
+      background: url("../../img/about-bg@2x.jpg") center center / cover;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -89,7 +89,7 @@
         position: relative;
 
         &::after {
-          content: url("../images/arrow-down.png");
+          content: url("../../img/arrow-down.png");
           position: absolute;
           // top: 50%;
           transform: translateY(-20%);
@@ -135,6 +135,8 @@
             flex-direction: column;
             align-items: center;
             padding: 2rem 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
 
             p:nth-child(2) {
               margin-bottom: 1.5rem;
@@ -155,7 +157,7 @@
         position: relative;
 
         &::after {
-          content: url("../images/arrow-right.png");
+          content: url("../../img/arrow-right.png");
           position: absolute;
           // top: 50%;
           transform: translateY(-20%);
@@ -173,7 +175,7 @@
 // adult peds medicine
 
 .adult-ped-med {
-  background: url("../images/adult-peds-med-bg@2x.jpg") center left / cover;
+  background: url("../../img/adult-peds-med-bg@2x.jpg") center left / cover;
   position: relative;
 
   &::before {
@@ -266,7 +268,7 @@
 // womens care
 
 .womenscare {
-  background: url("../images/womenscare-bg@2x.jpg") bottom center / cover;
+  background: url("../../img/womenscare-bg@2x.jpg") bottom center / cover;
   position: relative;
 
   &::before {
@@ -316,7 +318,7 @@
 // nutritional
 
 .nutritional {
-  background: url("../images/nutritional-bg@2x.jpg") center center / cover;
+  background: url("../../img/nutritional-bg@2x.jpg") center center / cover;
   overflow: hidden;
 
   .containerish-fluid {
@@ -411,7 +413,7 @@
     }
 
     .sec-img {
-      background: url("../images/aesthetics-img@2x.jpg") center center / cover;
+      background: url("../../img/aesthetics-img@2x.jpg") center center / cover;
       height: 700px;
       align-self: stretch;
       @include isXLarge {

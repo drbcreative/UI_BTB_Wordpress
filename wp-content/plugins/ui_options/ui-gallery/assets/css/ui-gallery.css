@@ -1,0 +1,28 @@
+/* UI Gallery styles */
+
+/* Frontend */
+.caption {
+    padding-top: 5px;
+}
+
+/* Gallery archive page */
+
+.gallery-archive {
+    height: 100vh;
+}
+.gallery-archive .ui-gallery {
+margin-top: 20px;
+    overflow-x: hidden;
+}
+
+.gallery-archive .featured-image {
+    height: 25vh;
+}
+
+.gallery-archive .description {
+    height: 4vh;
+    overflow-y: hidden;
+    margin-bottom: 5px;
+}
+/* END Gallery archive page */
+
