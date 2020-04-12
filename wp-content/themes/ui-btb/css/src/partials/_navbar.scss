@@ -1,0 +1,107 @@
+/* ************************************************************************** */
+/* Navbar ******************************************************************* */
+/* ************************************************************************** */
+.navbar {
+  // padding-top: 0;
+  // padding-bottom: 0;
+  // max-width: calc(100% - 60px);
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  position: relative;
+
+  .navbar-brand img {
+    max-width: 156px;
+  }
+
+  .navbar-brand {
+    position: relative;
+  }
+
+  &.bg-light {
+    @include isXLarge {
+      background-color: rgba(255,255,255,.6) !important;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 50px rgba($color-black, .16);
+      position: relative;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    @include isXLarge {
+      background-image: linear-gradient(90deg, $color-white 50%, rgba($color-white, 0));
+      z-index: -1;
+    }
+  }
+}
+
+.navbar-expand-xl .navbar-nav .nav-link {
+  @include isXLarge {
+    padding-right: 0;
+  }
+}
+
+.navbar-nav {
+  .nav-item {
+    font-family: $font-primary;
+    margin-left: 1.5rem;
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 700;
+      color: #5A5A5A;
+
+      &:hover {
+        color: $color-light-accent !important;
+      }
+    }
+
+    &.nav-separator {
+      display: none;
+      @include isXLarge {
+        display: block;
+        &::before {
+          content: url('../images/nav-dot.png');
+          position: absolute;
+          top: 50%;
+          transform: translateY(-60%);
+          // font-size: 4rem;
+          color: $color-light-accent;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    border: none;
+
+    .dropdown-item {
+      font-family: $font-primary;
+      font-size: 14px;
+      color: $color-dark;
+
+      &:hover {
+        background-color: $color-light-accent !important;
+        color: $color-white;
+      }
+    }
+    @include isXLarge {
+      top: 80%;
+    }
+  }
+}
+
+.dropdown-toggle::after {
+  border: none !important;
+  margin-left: 0 !important;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}

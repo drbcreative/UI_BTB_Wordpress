@@ -1,0 +1,478 @@
+/* ************************************************************************** */
+/* Main Page Sections ******************************************************* */
+/* ************************************************************************** */
+// hero
+
+.hero {
+  background: url("../images/hero-bg@2x.jpg") top center / cover;
+  position: relative;
+  padding-top: 3rem;
+  @include isMedium {
+    padding-top: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba($color-dark, .7);
+    width: 100%;
+    height: 100%;
+    @include isLarge {
+      opacity: 0;
+    }
+  }
+
+  .containerish {
+    min-height: 100vh;
+    padding: 40px 40px 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    @include isMedium {
+      padding: 40px 40px 20px;
+      min-height: 50vh;
+    }
+    @include isLarge {
+      padding: 50px 40px;
+      min-height: 100vh;
+    }
+
+    .section-info {
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        max-width: 970px;
+        text-align: center;
+      }
+    }
+  }
+}
+//about
+
+.about {
+  // padding: 40px;
+  @include isXLarge {
+    padding: 60px 40px;
+  }
+
+  .containerish {
+    .about-us {
+      background: url("../images/about-bg@2x.jpg") center center / cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      @include isLarge {
+        padding: 60px;
+      }
+
+      p {
+        max-width: 890px;
+        text-align: center;
+      }
+    }
+    // direct pt care
+    .direct-pt-care {
+      margin-top: 2rem;
+      padding: 40px;
+      @include isXLarge {
+        padding: 60px 0;
+      }
+
+      h1 {
+        position: relative;
+
+        &::after {
+          content: url("../images/arrow-down.png");
+          position: absolute;
+          // top: 50%;
+          transform: translateY(-20%);
+          margin-left: 1rem;
+        }
+      }
+
+      p.body-copy {
+        max-width: 948px;
+      }
+
+      .d-pt-care-cards {
+        margin-top: 2rem;
+        display: grid;
+        grid-gap: 2rem;
+        @include isMedium {
+          grid-template-columns: 1fr 1fr;
+        }
+        @include isLarge {
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 1rem;
+        }
+        @include isXLarge {
+          grid-gap: 2rem;
+        }
+
+        .card {
+          border-radius: 10px;
+          border: solid 1px #E1E0DF;
+
+          .card-header {
+            background: $color-main;
+            height: 91px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+
+          .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+
+            p:nth-child(2) {
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    // end direct pt care
+    // concierge care
+    .concierge-care {
+      padding: 40px;
+      @include isXLarge {
+        padding: 60px 0;
+      }
+
+      h1 {
+        position: relative;
+
+        &::after {
+          content: url("../images/arrow-right.png");
+          position: absolute;
+          // top: 50%;
+          transform: translateY(-20%);
+          margin-left: 1rem;
+        }
+      }
+
+      p.body-copy {
+        max-width: 948px;
+      }
+    }
+    // end concierge care
+  }
+}
+// adult peds medicine
+
+.adult-ped-med {
+  background: url("../images/adult-peds-med-bg@2x.jpg") center left / cover;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-accent, .6);
+    @include isLarge {
+      display: none;
+    }
+  }
+
+  .containerish {
+    padding: 40px;
+    position: relative;
+    @include isLarge {
+      padding: 60px 40px;
+      height: 743px;
+    }
+    @include isLarge {
+      padding: 80px 40px;
+    }
+    @include isXLarge {
+      padding: 80px 40px;
+    }
+    @include isRetina {
+      padding: 80px 0;
+    }
+    @include isGiant {
+      height: 85vh;
+    }
+
+    .sec-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p {
+        @include isLarge {
+          max-width: 716px;
+        }
+      }
+
+      .ui-btn-group {
+        @include isMedium {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+// dermatology
+
+.dermatology {
+  .containerish {
+    padding: 40px;
+    display: grid;
+    grid-gap: 2rem;
+    @include isLarge {
+      grid-template-columns: 1fr 1.5fr;
+      padding: 60px 40px;
+    }
+    @include isXLarge {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    @include isRetina {
+      padding: 60px 0;
+    }
+    // @include isXLarge {
+    //   grid-template-columns: 1fr 1fr;
+    //   align-items: center;
+    // }
+    .sec-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .ui-btn-group {
+        @include isMedium {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+// womens care
+
+.womenscare {
+  background: url("../images/womenscare-bg@2x.jpg") bottom center / cover;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-white, .7);
+    @include isLarge {
+      display: none;
+    }
+  }
+
+  .containerish {
+    position: relative;
+    padding: 40px;
+    @include isMedium {
+      height: 50vh;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    @include isLarge {
+      height: 700px;
+    }
+    @include isXLarge {
+      height: 900px;
+    }
+    @include isGiant {
+      height: 85vh;
+    }
+
+    .sec-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p.body-copy {
+        text-align: center;
+        max-width: 915px;
+      }
+    }
+  }
+}
+// nutritional
+
+.nutritional {
+  background: url("../images/nutritional-bg@2x.jpg") center center / cover;
+  overflow: hidden;
+
+  .containerish-fluid {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    padding: 20px;
+    @include isMedium {
+      height: 50vh;
+    }
+    @include isLarge {
+      grid-template-columns: 1fr 1.5fr;
+      height: 663px;
+      padding: 0;
+    }
+    @include isXLarge {
+      grid-template-columns: 1fr 1fr;
+      height: 663px;
+      padding: 0;
+    }
+
+    .sec-info {
+      // height: auto;
+      background: rgba($color-white, .85);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include isMedium {
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2rem;
+      }
+      @include isLarge {
+        grid-column: 2;
+        padding: 3rem;
+      }
+      @include isRetina {
+        padding: 5rem;
+      }
+
+      .ui-btn-group {
+        margin-bottom: 0;
+        @include isMedium {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+// aesthetics
+.aesthetics {
+  background-color: rgba($color-main, .4);
+
+  .containerish-fluid {
+    display: grid;
+
+    @include isXLarge {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    @include isRetina {
+      grid-template-columns: 1fr 1.1fr;
+      align-items: center;
+    }
+    .sec-info {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include isXLarge {
+        padding: 5rem 3rem;
+      }
+      @include isRetina {
+        padding: 7rem 6rem;
+      }
+      @include isGiant {
+        padding: 12rem 10rem;
+      }
+
+      .sec-logo {
+        max-width: 202px;
+      }
+
+      .ui-btn-group {
+        width: auto;
+        align-self: stretch;
+      }
+    }
+
+    .sec-img {
+      background: url("../images/aesthetics-img@2x.jpg") center center / cover;
+      height: 700px;
+      align-self: stretch;
+      @include isXLarge {
+        height: auto;
+      }
+    }
+  }
+}
+
+// appomintments
+.appointment {
+  .containerish-fluid {
+    padding: 40px;
+    display: grid;
+    grid-gap: 2rem;
+
+    @include isXLarge {
+      grid-template-columns: 1fr 1fr;
+      align-items: flex-start;
+      padding: 60px 0;
+    }
+    @include isRetina {
+      align-items: center;
+      grid-template-columns: 1fr 1.05fr;
+    }
+
+    .sec-info {
+      @include isXLarge {
+        padding: 0 40px;
+      }
+      @include isRetina {
+        padding: 0 6rem;
+      }
+      @include isGiant {
+        padding: 0 10rem;
+      }
+      p.body-copy {
+        max-width: 535px;
+      }
+      #appointment {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        input {
+          height: 47px;
+          border: 2px solid $color-main;
+          padding-left: 1rem;
+          margin-bottom: .5rem;
+          @include isLarge {
+            max-width: 361px;
+          }
+        }
+        button {
+          border: none;
+          @include isXLarge {
+            align-self: flex-start;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

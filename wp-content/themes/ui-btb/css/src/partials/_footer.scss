@@ -1,0 +1,108 @@
+/* ************************************************************************** */
+/* FOOTER Sections ********************************************************** */
+/* ************************************************************************** */
+/* footer 1 ***************************************************************** */
+.footer-1 {
+  background: #F8F7F7;
+
+  .sec-link-dark {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    text-decoration: none;
+  }
+
+  .containerish-fluid {
+    padding: 40px;
+    display: grid;
+    grid-gap: 2rem;
+
+    @include isMedium {
+      grid-template-columns: max-content repeat(3, 1fr);
+    }
+
+    @include isXLarge {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 40px 30px;
+    }
+
+
+    .col-two, .col-three, .col-four {
+      @include isXLarge {
+        padding-top: 2rem;
+      }
+    }
+
+    .col-one {
+      display: flex;
+      justify-content: flex-start;
+      .footer-logo {
+        max-width: 201px;
+        @include isMedium {
+          max-width: 45px;
+          max-height: 50px;
+        }
+        @include isLarge {
+          max-width: 210px;
+          max-height: 216px;
+        }
+      }
+    }
+    .col-two {
+      .social-links {
+        margin-top: 1rem;
+
+        a.social-link {
+          display: inline-block;
+          position: relative;
+          width: 30px !important;
+          height: 30px;
+          border: 1px solid $color-main;
+          border-radius: 50px;
+
+          svg {
+            max-height: 20px;
+            color: $color-main;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+    .col-three {
+      p {
+        line-height: calc(15px * 1.5);
+      }
+    }
+  }
+}
+// footer 2
+.footer-2 {
+  background: $color-main;
+  padding: 5px 0;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $color-white;
+
+    &:hover {
+      color: lighten($color-light-accent, 20);
+      text-decoration: none;
+    }
+  }
+
+  .containerish {
+
+    .sec-info {
+      text-align: center;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

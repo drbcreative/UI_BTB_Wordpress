@@ -1,0 +1,125 @@
+/* ************************************************************************** */
+/* Typography *************************************************************** */
+/* ************************************************************************** */
+@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Josefin Sans', sans-serif;
+
+// General Font Setup
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5 h6 {
+  margin: 0 !important;
+}
+
+/* Primary Header */
+h1 {
+  font-family: $font-secondary;
+  font-size: 2.8125rem; // 45px
+  line-height: 2.8125rem;
+  font-weight: 600;
+
+}
+
+h2 {
+  font-family: $font-secondary;
+  font-size: 1.375rem; // 22px
+  line-height: 1.375rem;
+  font-weight: 600;
+
+  &.is-light {
+    font-weight: 300 !important;
+  }
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+h3, h4, h5, h6 {
+  font-family: $font-secondary;
+}
+
+
+//Body Text
+.body-copy {
+  font-size: 1.125rem; // 18px
+  line-height: calc(1.125rem * 2);
+  font-family: $font-primary;
+  font-weight: 400;
+
+  &.is-light {
+    font-weight: 300;
+  }
+
+  &.is-italic {
+    font-style: italic;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+/* Lead Text (hero) */
+.lead-copy {
+  font-size: 1.125rem; // 18px
+  line-height: calc(1.125rem * 1.5);
+  font-family: $font-primary;
+
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+.footer-copy {
+  font-size: 1rem;
+  line-height:24px;
+  font-family: $font-primary;
+
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+/* Footer2 Text */
+.small-copy {
+  font-size: 15px;
+  line-height: calc(12px * 1.5);
+  font-family: $font-primary;
+}
+.fine-print {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: $font-primary;
+  font-style: italic;
+}
+
+/* Text Modifiers */
+.wrap-75 {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem !important;
+    line-height: 1rem !important;
+  }
+}

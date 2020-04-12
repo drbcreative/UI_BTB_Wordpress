@@ -1,0 +1,126 @@
+/* ************************************************************************** */
+/* Links ******************************************************************** */
+/* ************************************************************************** */
+/* Topbar ******************************************************************* */
+.topbar-link {
+  font-family: $font-secondary;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1rem;
+  color: $color-main;
+  @include linkFade;
+
+  &:hover {
+    color: $color-dark;
+    text-decoration: none;
+    @include linkFade;
+  }
+}
+/* header links ************************************************************* */
+.header-link {
+  color: $color-white;
+  font-family: $font-primary;
+  font-size: 1rem;
+
+  &:hover {
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $color-white;
+  }
+
+  &:visited {
+    color: $color-white;
+  }
+}
+/* General Page Links ******************************************************* */
+.gen-page-link {
+  @extend .body-copy;
+  color: $color-light-accent;
+
+  &:hover {
+    // text-decoration: none;
+    color: $color-white;
+  }
+}
+
+.sec-link-white {
+  @extend .body-copy;
+  font-weight: 700;
+  color: $color-white;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+.sec-link-dark {
+  @extend .body-copy;
+  font-weight: 700;
+  color: $color-copy;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.appointment-page-link {
+  @extend h5;
+  color: $color-light;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-dark;
+  }
+}
+/* Footer Links ************************************************************* */
+.footer-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+.footer-nav-link {
+  font-size: 15px; // 16px
+  line-height: calc(15px * 1.5);
+  font-family: $font-primary;
+  color: $color-copy;
+  text-decoration: none;
+  @include linkFade;
+
+  &:hover {
+    color: $color-main;
+    text-decoration: none;
+    @include linkFade;
+  }
+}
+
+.footer-link {
+  @extend .body-copy;
+  color: $color-white;
+  @include linkFade;
+
+  &:hover {
+    color: $color-light;
+    text-decoration: none;
+    @include linkFade;
+  }
+}
+
+.small-footer-link {
+  @extend .small-copy;
+  color: $color-white;
+  @include linkFade;
+
+  &:hover {
+    color: $color-main;
+    @include linkFade;
+  }
+}
