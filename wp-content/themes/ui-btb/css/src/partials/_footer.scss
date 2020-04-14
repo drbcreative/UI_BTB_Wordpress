@@ -36,15 +36,18 @@
     .col-one {
       display: flex;
       justify-content: flex-start;
-      .footer-logo {
-        max-width: 201px;
-        @include isMedium {
-          max-width: 45px;
-          max-height: 50px;
-        }
-        @include isLarge {
-          max-width: 210px;
-          max-height: 216px;
+      a.foot-logo-link {
+      width: 100%;
+        .footer-logo {
+          max-width: 201px;
+          @include isMedium {
+            max-width: 45px;
+            max-height: 50px;
+          }
+          @include isLarge {
+            max-width: 210px;
+            max-height: 216px;
+          }
         }
       }
     }
@@ -67,6 +70,13 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+          }
+        }
+        a.social-link, a.social-link svg {
+          &:hover {
+            color: $color-accent;
+            border-color: $color-accent;
+            transition: all .2s ease;
           }
         }
       }

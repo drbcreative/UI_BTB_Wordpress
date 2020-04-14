@@ -31,9 +31,9 @@
 <header id="header-container">
   <section class="top-bar">
     <div class="containerish-fluid">
-      <a href="#" class="topbar-link">EVENTS</a>
-      <a href="#" class="topbar-link">PROMOTIONS</a>
-      <a href="#" class="topbar-link">CONTACT</a>
+      <a href="<?php bloginfo('url')?>/events" class="topbar-link">EVENTS</a>
+      <a href="<?php bloginfo('url')?>/promotions" class="topbar-link">PROMOTIONS</a>
+      <a href="<?php bloginfo('url')?>/contact/" class="topbar-link">CONTACT</a>
       <a href="tel:765-683-3180" class="topbar-link">(765) 683-3180</a>
       <div class="social-links">
         <a href="#" class="social-link"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -49,7 +49,7 @@
   </section>
   <section class="nav-container">
     <div class="logonav">
-      <a href="/" class="nav-logo">
+      <a href="<?php bloginfo('url') ?>" class="nav-logo">
         <img src="<?php echo IMG ?>/hero-logo@2x.png" alt="" class="logomain">
       </a>
     </div>
@@ -64,7 +64,7 @@
       <div class="navbaritems">
         <ul class="items">
           <li class="menu-item">
-            <a href="" class="menu-link">
+            <a href="<?php bloginfo('url')?>/about/" class="menu-link">
               <span class="menutext">
                 ABOUT
               </span>
@@ -83,9 +83,26 @@
             </a>
             <div class="dropmenu">
               <ul class="dropmenuitems">
-                <li class="menu-item"><a href="" class="menulink">LINK 1</a></li>
-                <li class="menu-item"><a href="" class="menulink">LINK 2</a></li>
-                <li class="menu-item"><a href="" class="menulink">LINK 3</a></li>
+                <?php $treatments = array(
+                'post_type' => 'treatments',
+                'posts_per_page' => -1,
+                'order' => 'ASC',
+                'orderby' => 'title',
+                'tax_query' => array(
+                  array(
+                    'taxonomy' => 'treatments_category',
+                    'field' => 'slug',
+                    'terms' => 'primary-care',
+                    'operator' => 'IN'
+                  )
+                )
+                );
+                $loop = new WP_Query( $treatments  );
+                if($loop->have_posts()): ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <li class="menu-item"><a href="<?php the_permalink() ?>" class="menulink"><?php the_title() ?></a></li>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); endif; ?>
               </ul>
             </div>
           </li>
@@ -102,9 +119,26 @@
             </a>
             <div class="dropmenu">
               <ul class="dropmenuitems">
-                <li class="menu-item"><a href="" class="menulink">LINK 1</a></li>
-                <li class="menu-item"><a href="" class="menulink">LINK 2</a></li>
-                <li class="menu-item"><a href="" class="menulink">LINK 3</a></li>
+                <?php $treatments = array(
+                'post_type' => 'treatments',
+                'posts_per_page' => -1,
+                'order' => 'ASC',
+                'orderby' => 'title',
+                'tax_query' => array(
+                  array(
+                    'taxonomy' => 'treatments_category',
+                    'field' => 'slug',
+                    'terms' => 'aesthetics',
+                    'operator' => 'IN'
+                  )
+                )
+                );
+                $loop = new WP_Query( $treatments  );
+                if($loop->have_posts()): ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <li class="menu-item"><a href="<?php the_permalink() ?>" class="menulink"><?php the_title() ?></a></li>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); endif; ?>
               </ul>
             </div>
           </li>
@@ -121,28 +155,18 @@
             </a>
             <div class="dropmenu">
               <ul class="dropmenuitems">
-                <li class="menu-item"><a href="" class="menulink">LINK 1</a></li>
-                <li class="menu-item"><a href="" class="menulink">LINK 2</a></li>
-                <li class="menu-item"><a href="" class="menulink">LINK 3</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="nenu-item nav-divider">
-            <img src="<?php echo IMG ?>/nav-dot.png" alt="" class="nav-dot">
-          </li>
-
-          <li class="menu-item hasdropdown">
-            <a href="" class="menu-link">
-              <span class="menutext">
-                PATIENT INFO
-              </span>
-            </a>
-            <div class="dropmenu">
-              <ul class="dropmenuitems">
-                <li class="menu-item"><a href="" class="menulink">LINK 1</a></li>
-                <li class="menu-item"><a href="" class="menulink">LINK 2</a></li>
-                <li class="menu-item"><a href="" class="menulink">LINK 3</a></li>
+                <?php $concerns = array(
+                'post_type' => 'concerns',
+                'posts_per_page' => -1,
+                'orderby' => 'title',
+                'order' => 'ASC',
+                );
+                $loop = new WP_Query( $concerns  );
+                if($loop->have_posts()): ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <li class="menu-item"><a href="<?php the_permalink() ?>" class="menulink"><?php the_title() ?></a></li>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); endif; ?>
               </ul>
             </div>
           </li>
@@ -152,7 +176,19 @@
           </li>
 
           <li class="menu-item">
-            <a href="" class="menu-link">
+            <a href="<?php bloginfo('url')?>/patient-info/" class="menu-link">
+              <span class="menutext">
+                PATIENT INFO
+              </span>
+            </a>
+          </li>
+
+          <li class="nenu-item nav-divider">
+            <img src="<?php echo IMG ?>/nav-dot.png" alt="" class="nav-dot">
+          </li>
+
+          <li class="menu-item">
+            <a href="<?php bloginfo('url')?>/request-appointment/" class="menu-link">
               <span class="menutext">
                 REQUEST APPOINTMENT
               </span>
@@ -161,7 +197,9 @@
 
         </ul>
       </div>
+
     </nav>
+
   </section>
 </header>
 <!-- HEADER -->

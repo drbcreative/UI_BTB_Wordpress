@@ -28,7 +28,7 @@ section.main-title {
     font-size: 3rem;
     line-height: 3.5rem;
     font-weight: 300;
-    color: $color-copy;
+    color: $color-main;
     margin: 0 0 1.5rem 0;
     text-align: center;
 
@@ -44,7 +44,7 @@ section.main-title {
 
 section.interior-fold {
   &.fold-landing {
-    padding: 8rem 0 1rem;
+    padding: 0;
   }
 }
 
@@ -69,7 +69,7 @@ section.main-title {
     // background-image: url(../../img/placeholder5.jpg);
     // background-position: 50%;
     // background-size: cover;
-    background: rgba($color-light-accent, 1);
+    background: $color-light-accent;
   }
 
   // &:before {
@@ -152,11 +152,11 @@ section.main-title {
   background-size: 100% auto;
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 2rem;
     margin-bottom: 1rem!important;
     font-weight: 500;
-    color: $color-copy;
+    color: $color-main;
   }
 
   h3 {
@@ -167,7 +167,10 @@ section.main-title {
 
   p {
     margin-bottom: 1.5rem!important;
-        color: $color-copy;
+    color: $color-copy;
+    font-family: $font-primary;
+    font-size: 18px;
+    line-height: 36px;
   }
 
   // strong {
@@ -406,8 +409,9 @@ span.linktitle {
 
 .fold-landing {
   min-height: 0;
-  max-width: 1366px;
-  margin: 2rem;
+  // max-width: 1366px;
+  width: 100%;
+  // margin: 2rem;
 
   @include isXLarge {
     margin: 0 auto;
@@ -622,184 +626,29 @@ span.prev.slick-arrow {
 
 // SCHEDULE Page FORM
 .page-form {
-//   .appointment-wrapper {
-//     // .page-form {
-//         padding: 30px;
-//         width: 100%;
-//         max-width: 900px;
-//         margin: 0 auto;
 //
-//         @mixin selectStyles {
-//           -webkit-appearance: none;
-//           -moz-appearance: none;
-//           width: 100%;
-//           text-align: left;
-//           padding: 0 20px;
-//           color: #444;
-//           font-size: 14px;
-//           border: none;
-//           box-shadow: none;
-//           font-size: 14px;
-//           letter-spacing: 1px;
-//           border-radius: 0;
-//           font-weight: 300;
-//           background-color: transparent;
-//           border-bottom: 1px solid rgba($color: #707070, $alpha: 0.28);
-//           margin-bottom: 20px;
-//         }
-//
-//         @mixin placeholderText {
-//           font-size: 14px !important;
-//           line-height: 14px;
-//           color: $color-copy;
-//           font-weight: 300;
-//           text-transform: capitalize;
-//         }
-//
-//         input {
-//           padding: 20px 20px!important;
-//           @include selectStyles;
-//
-//           &::placeholder {
-//             @include placeholderText;
-//           }
-//
-//           &:hover {
-//             box-shadow: 0 3px 11px 7px rgba(0, 0, 0, 0.2);
-//           }
-//         }
-//
-//         select.form-control {
-//           // padding: 20px 20px!important;
-//           background: transparent
-//             url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
-//             no-repeat right 0.75rem center/8px 10px;
-//           @include selectStyles;
-//
-//           &::placeholder {
-//             @include placeholderText;
-//           }
-//
-//           &:hover {
-//             box-shadow: 0 3px 11px 7px rgba(0, 0, 0, 0.2);
-//           }
-//         }
-//
-//         textarea {
-//           @include selectStyles;
-//
-//           &::placeholder {
-//             @include placeholderText;
-//           }
-//
-//           &:hover {
-//             box-shadow: 0 3px 11px 7px rgba(0, 0, 0, 0.2);
-//           }
-//         }
-//         .formbuttons {
-//           display: flex;
-//           flex-wrap: wrap;
-//         }
-//         .formpwrap {
-//           width: 100%;
-//         }
-//         .formbuttons .input {
-//           width: 50%;
-//         }
-//         h2.sec-title {
-//           // font-weight: 200;
-//           text-transform: capitalize;
-//         }
-//
-//         p {
-//           margin: 0 auto 30px;
-//           font-size: 16px;
-//         }
-//         span.arw {
-//           margin-left: 40px;
-//       }
-//         .contact-block-halfinner {
-//           display: flex;
-//         }
-//
-//         .contact-block-halfinner .formtitle {
-//           width: 65%;
-//           background-image: url(../../img/rabg@2x.jpg);
-//           padding: 60px 30px;
-//           background-size: 70% 100%;
-//           background-repeat: no-repeat;
-//           background-position: 0% 0%;
-//         }
-//
-//         .contact-block-halfinner form#schedule {
-//           width: 50%;
-//           display: flex;
-//           align-items: flex-end;
-//           padding: 0 0 60px;
-//           background-image: url(../../img/leaf@2x.png);
-//           background-position: 50% 70%;
-//           background-size: 60%;
-//           background-repeat: no-repeat;
-//           padding: 0 0 60px 40px;
-//         }
-//
-//         .f-submit {
-//           margin: 10px 0 0;
-//           justify-content: end;
-//           display: block;
-//         }
-//
-//         .imageblock .pic {
-//           display: block;
-//         }
-//         button.ui-btn.mx-auto.submit-formbtns.ui-yellowverse {
-//           min-width: 150px;
-//           background: #ffffff;
-//           border: 1px solid;
-//           color: #958479;
-//           justify-content: center;
-//           text-transform: uppercase;
-//           font-weight: 500;
-//         }
-//     // }
-//   }
-// }
-#request {
-  display: grid;
-  grid-gap: 1rem;
-  @include isLarge {
-    max-width: 750px;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4rem;
-    margin: 0 auto;
-  }
-  @include isXLarge {
-    margin-top: 2rem !important;
-  }
+#schedule {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   input, select {
-    height: 53px;
-    padding: 1rem;
-    border: none;
-    font-family: $font-primary;
-    font-weight: 400;
-    color: $color-copy;
-  }
-  select {
-    border-radius: 0 !important;
+    height: 47px;
+    border: 2px solid $color-main;
     -webkit-appearance: none;
+    border-radius: 0;
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+    @include isLarge {
+      width: 650px;
+    }
   }
   button {
-    @include isLarge {
-      grid-column: 1 / -1;
-      justify-self: center;
-    }
-    background-image: linear-gradient(160deg, #25AAE1, #25D3E1);
     border: none;
-
-    &:hover {
-      background-image: linear-gradient(-160deg, lighten(#25AAE1, 10), lighten(#25D3E1, 10));
-      text-decoration: none;
-      color: $color-white;
+    @include isXLarge {
+      align-self: center;
+      width: auto;
     }
   }
 }
@@ -2617,21 +2466,24 @@ hr{
     margin: 0 auto;
     padding: 1rem 1rem;
     a {
-      color: $color-light-accent;
+      color: $color-main;
       text-decoration: none;
 
       &:hover {
-        color: rgba($color-dark-accent, 1);
+        color: $color-accent;
         text-decoration: none;
       }
     }
 
     .current {
-      color: $color-light-accent;
+      color: lighten($color-main, 20);
     }
 
     .divider {
       margin: 0 1rem;
+    }
+    .breadcrumb_last {
+      color: $color-accent;
     }
   }
 }
@@ -2763,20 +2615,20 @@ hr{
     }
   }
 
-  // .entry-content{
-  //   ul { padding-left: 15px; list-style:none; }
-  //   li {
-  //     margin: 0 0 10px 0;
-  //     &:before {
-  //       font-family: 'Font Awesome 5 Free';
-  //       content: "\f043";
-  //       visibility: visible;
-  //       color: $color-light-accent;
-  //       font-weight: 900;
-  //       padding-right: 10px;
-  //     }
-  //   }
-  // }
+  .entry-content{
+    ul { padding-left: 15px; list-style:none; margin-bottom: 2rem}
+    li {
+      margin: 0 0 10px 0;
+      // &:before {
+      //   font-family: 'Font Awesome 5 Free';
+      //   content: "\f043";
+      //   visibility: visible;
+      //   color: $color-light-accent;
+      //   font-weight: 900;
+      //   padding-right: 10px;
+      // }
+    }
+  }
 
   .form-bg {
     background: $color-white;

@@ -1,8 +1,8 @@
 <!-- Schedule A Consultation -->
 
-<form action="#" id="request" class="mt-4">
+<form action="#" id="schedule" class="mt-4">
   <input type="text" name="name" placeholder="" value="Your Name">
-  <input type="email" name="email" placeholder="" value="Email">
+  <input type="text" name="email" placeholder="" value="Email">
   <input type="text" name="phone" placeholder="" value="Phone">
   <select name="preferred_time" placeholder="">
       <option value="" disabled selected>Preferred Time</option>
@@ -36,6 +36,6 @@
       <?php endwhile; ?>
       <?php wp_reset_postdata(); endif; ?>
   </select>
-  <button type="submit" class="ui-btn-white-ol mt-4">SUBMIT REQUEST</button>
+  <button type="submit" class="ui-btn-main mt-4">SUBMIT REQUEST</button>
           <div id="form-results"></div>
 </form>

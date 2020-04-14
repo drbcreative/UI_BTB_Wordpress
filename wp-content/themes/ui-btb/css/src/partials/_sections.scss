@@ -348,6 +348,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      p {
+        max-width: 750px;
+      }
       @include isMedium {
         justify-content: center;
         align-items: flex-start;
@@ -453,14 +457,16 @@
       p.body-copy {
         max-width: 535px;
       }
-      #appointment {
+      #schedule {
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
 
-        input {
+        input, select {
           height: 47px;
           border: 2px solid $color-main;
+          -webkit-appearance: none;
+          border-radius: 0;
           padding-left: 1rem;
           margin-bottom: .5rem;
           @include isLarge {

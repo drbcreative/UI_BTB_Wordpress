@@ -14,7 +14,7 @@ get_header(); ?>
               offer our support and expertise every step of the way.
             </p>
             <div class="ui-btn-group">
-              <a href="#" class="ui-btn-main ui-btn-right">REQUEST APPOINTMENT</a>
+              <a href="<?php bloginfo('url')?>/request-appointment/" class="ui-btn-main ui-btn-right">REQUEST APPOINTMENT</a>
               <a href="#" class="ui-btn-white-ol">VIEW SERVICES</a>
             </div>
           </div>
@@ -33,7 +33,7 @@ get_header(); ?>
               diagnostic testing. We are eager to help you both in-office and through home visits.
             </p>
             <div class="ui-btn-group">
-              <a href="#" class="ui-btn-white ui-btn-right">REQUEST APPOINTMENT</a>
+              <a href="<?php bloginfo('url')?>/request-appointment/" class="ui-btn-white ui-btn-right">REQUEST APPOINTMENT</a>
               <a href="#" class="ui-btn-white-ol">MEET US</a>
             </div>
           </div>
@@ -124,7 +124,7 @@ get_header(); ?>
               alternative medical therapies.
             </p>
             <div class="ui-btn-group">
-              <a href="#" class="ui-btn-white ui-btn-right">REQUEST APPOINTMENT</a>
+              <a href="<?php bloginfo('url')?>/request-appointment/" class="ui-btn-white ui-btn-right">REQUEST APPOINTMENT</a>
               <a href="#" class="ui-btn-white-ol">MEET US</a>
             </div>
           </div>
@@ -135,7 +135,7 @@ get_header(); ?>
       <!-- dermatology -->
       <section class="dermatology fade-up-stop">
         <div class="containerish">
-          <img src="img/dermatology-img@2x.jpg" alt="" class="sec-img">
+          <img src="<?php echo IMG ?>/dermatology-img@2x.jpg" alt="" class="sec-img">
           <div class="sec-info">
             <h2 class="color-main mb-2">OUT-PATIENT</h2>
             <h1 class="color-main">DERMATOLOGY</h1>
@@ -146,7 +146,7 @@ get_header(); ?>
               begins with a thorough consultation and diagnostic testing. After determining the nature of your lesion, we can perform a minor office surgical procedure to remove it safely with minimal downtime.
             </p>
             <div class="ui-btn-group">
-              <a href="#" class="ui-btn-main ui-btn-right">REQUEST APPOINTMENT</a>
+              <a href="<?php bloginfo('url')?>/request-appointment/" class="ui-btn-main ui-btn-right">REQUEST APPOINTMENT</a>
               <a href="#" class="ui-btn-main-ol">FIND RELIEF</a>
             </div>
           </div>
@@ -166,7 +166,7 @@ get_header(); ?>
               Additionally, we provide GYN, breast exams, contraceptive counseling, and more to ensure your ongoing health.
             </p>
             <div class="ui-btn-group">
-              <a href="#" class="ui-btn-main ui-btn-right">REQUEST APPOINTMENT</a>
+              <a href="<?php bloginfo('url')?>/request-appointment/" class="ui-btn-main ui-btn-right">REQUEST APPOINTMENT</a>
               <a href="#" class="ui-btn-main-ol">FIND COMFORT</a>
             </div>
           </div>
@@ -184,7 +184,7 @@ get_header(); ?>
               Preventative care includes maintaining a healthy immune system and body weight. At Back to Basics, we never overlook the importance of proper diet and exercise, that is why we’re happy to provide our nutritional consultation services.
             </p>
             <div class="ui-btn-group">
-              <a href="#" class="ui-btn-main ui-btn-right">REQUEST APPOINTMENT</a>
+              <a href="<?php bloginfo('url')?>/request-appointment/" class="ui-btn-main ui-btn-right">REQUEST APPOINTMENT</a>
               <a href="#" class="ui-btn-main-ol">FIND COMFORT</a>
             </div>
           </div>
@@ -206,7 +206,7 @@ get_header(); ?>
               for <a href="#" class="sec-link-dark">skin rejuvenation</a> on the face and body. If you’re eager to look and feel your best, we invite you to visit our center and discover all that Back to Basics has to offer.
             </p>
             <div class="ui-btn-group">
-              <a href="#" class="ui-btn-white ui-btn-right">REQUEST APPOINTMENT</a>
+              <a href="<?php bloginfo('url')?>/request-appointment/" class="ui-btn-white ui-btn-right">REQUEST APPOINTMENT</a>
               <a href="#" class="ui-btn-white-ol">BEAUTIFY SKIN</a>
             </div>
           </div>
@@ -214,30 +214,6 @@ get_header(); ?>
         </div>
       </section>
       <!-- /aesthetics -->
-
-      <!-- appointment -->
-      <section class="appointment">
-        <div class="containerish-fluid">
-          <img src="img/appointment-img@2x.jpg" alt="" class="sec-img">
-          <div class="sec-info fade-up-stop">
-            <h1 class="color-main">REQUEST <br> APPOINTMENT</h1>
-            <div class="yellow-divider my-4"></div>
-            <p class="body-copy color-copy <mb-4></mb-4>">
-              For primary care, pediatric and internal medicine, as well as preventative care, nutritional services, women’s health, aesthetics, and diagnostic testing, we’re here for you and your family every step of the way. Make an appointment via
-              the
-              form below or by calling <a href="tel:765-683-3180" class="sec-link-dark">(765) 683-3180</a>.
-            </p>
-            <form action="#" id="appointment">
-              <input type="text" name="NAME" placeholder="NAME*">
-              <input type="text" name="PHONE NUMBER" placeholder="PHONE NUMBER*">
-              <input type="text" name="EMAIL" placeholder="EMAIL*">
-              <input type="text" name="PREFERRED DAY + TIME" placeholder="PREFERRED DAY + TIME*">
-              <button type="submit" class="ui-btn-main mt-4">SUBMIT REQUEST</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <!-- /appointment -->
     </main>
     <!-- MAIN CONTENT -->
 <?php get_footer() ?>

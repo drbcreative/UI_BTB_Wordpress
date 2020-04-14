@@ -1,17 +1,29 @@
 <?php if(!is_page('request-appointment') && !is_page('rsvp') && !is_page('thank-you') ): ?>
 
-<!-- Request Consultation -->
-<section class="appointment">
-  <div class="containerish fade-in-bottom">
-    <h1 class="color-white">REQUEST APPOINTMENT</h1>
-    <p class="color-white body-copy my-3">
-      WPC Aesthetics & Wellness is here to provide you with the service and support you need. Schedule your consultation today by calling <a href="tel:254-399-6545">(254) 399-6545</a>, emailing <a
-        href="mailto:info@wacoprimarycare.com">info@wacoprimarycare.com</a> or filling out the form below.
-    </p>
-      <?php get_template_part( 'forms/schedule' ); ?>
-  </div>
-</section>
-<!-- / Request Consultation -->
+  <!-- appointment -->
+  <section class="appointment">
+    <div class="containerish-fluid">
+      <img src="<?php echo IMG ?>/appointment-img@2x.jpg" alt="" class="sec-img">
+      <div class="sec-info fade-up-stop">
+        <h1 class="color-main">REQUEST <br> APPOINTMENT</h1>
+        <div class="yellow-divider my-4"></div>
+        <p class="body-copy color-copy <mb-4></mb-4>">
+          For primary care, pediatric and internal medicine, as well as preventative care, nutritional services, women’s health, aesthetics, and diagnostic testing, we’re here for you and your family every step of the way. Make an appointment via
+          the
+          form below or by calling <a href="tel:765-683-3180" class="sec-link-dark">(765) 683-3180</a>.
+        </p>
+        <?php get_template_part( 'forms/schedule' ); ?>
+        <!-- <form action="#" id="appointment">
+          <input type="text" name="NAME" placeholder="NAME*">
+          <input type="text" name="PHONE NUMBER" placeholder="PHONE NUMBER*">
+          <input type="text" name="EMAIL" placeholder="EMAIL*">
+          <input type="text" name="PREFERRED DAY + TIME" placeholder="PREFERRED DAY + TIME*">
+          <button type="submit" class="ui-btn-main mt-4">SUBMIT REQUEST</button>
+        </form> -->
+      </div>
+    </div>
+  </section>
+  <!-- /appointment -->
 
 <?php endif; ?>
 
@@ -21,7 +33,9 @@
   <section class="footer-1">
     <div class="containerish-fluid">
       <div class="col-one">
-        <img src="<?php echo IMG ?>/btbha-logo.svg" alt="" class="footer-logo">
+        <a class="foot-logo-link" href="<?php bloginfo('url')?>">
+          <img src="<?php echo IMG ?>/btbha-logo.svg" alt="" class="footer-logo">
+        </a>
       </div>
       <div class="col-two">
         <h2 class="color-main mb-2">CONTACT US</h2>
@@ -58,20 +72,20 @@
         <h2 class="color-main mb-2">QUICK LINKS</h2>
         <table style="width:100%">
           <tr>
-            <td colspan="3"><a href="#" class="footer-nav-link">About</a></td>
-            <td><a href="#" class="footer-nav-link">Patient Info</a></td>
+            <td colspan="3"><a href="<?php bloginfo('url')?>/about/" class="footer-nav-link">About</a></td>
+            <td><a href="<?php bloginfo('url')?>/patient-info/" class="footer-nav-link">Patient Info</a></td>
           </tr>
           <tr>
-            <td colspan="3"><a href="#" class="footer-nav-link">Priamry Care</a></td>
-            <td><a href="#" class="footer-nav-link">Contact</a></td>
+            <td colspan="3"><a href="<?php bloginfo('url')?>/treatments/" class="footer-nav-link">Priamry Care</a></td>
+            <td><a href="<?php bloginfo('url')?>/contact/" class="footer-nav-link">Contact</a></td>
           </tr>
           <tr>
-            <td colspan="3"><a href="#" class="footer-nav-link">Aesthetics</a></td>
-            <td><a href="#" class="footer-nav-link">Events</a></td>
+            <td colspan="3"><a href="<?php bloginfo('url')?>/treatments/" class="footer-nav-link">Aesthetics</a></td>
+            <td><a href="<?php bloginfo('url')?>/events" class="footer-nav-link">Events</a></td>
           </tr>
           <tr>
-            <td colspan="3"><a href="#" class="footer-nav-link">Conditions</a></td>
-            <td><a href="#" class="footer-nav-link">Promotions</a></td>
+            <td colspan="3"><a href="<?php bloginfo('url')?>/conditions/" class="footer-nav-link">Conditions</a></td>
+            <td><a href="<?php bloginfo('url')?>/promotions" class="footer-nav-link">Promotions</a></td>
           </tr>
         </table>
 
@@ -136,7 +150,7 @@
         WebFontConfig = {
             google: {
                 families: [
-                    "Open+Sans:wght@300;400;700&family=Poppins:ital,wght@0,700;1,300&display=swap"
+                    "Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
                 ]
             }
         };
