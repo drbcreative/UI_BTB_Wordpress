@@ -157,7 +157,7 @@
         position: relative;
 
         &::after {
-          content: url("../../img/arrow-right.png");
+          content: url("../../img/arrow-down.png");
           position: absolute;
           // top: 50%;
           transform: translateY(-20%);
@@ -167,6 +167,49 @@
 
       p.body-copy {
         max-width: 948px;
+      }
+      .concierge-care-cards {
+        margin-top: 2rem;
+        display: grid;
+        grid-gap: 2rem;
+        @include isMedium {
+          grid-template-columns: 1fr 1fr;
+        }
+        @include isLarge {
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 1rem;
+        }
+        @include isXLarge {
+          grid-gap: 2rem;
+        }
+
+        .card {
+          border-radius: 10px;
+          border: solid 1px #E1E0DF;
+
+          .card-header {
+            background: $color-main;
+            height: 91px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+
+          .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            p:nth-child(2) {
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
       }
     }
     // end concierge care
@@ -387,7 +430,7 @@
       align-items: center;
     }
     @include isRetina {
-      grid-template-columns: 1fr 1.1fr;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
     }
     .sec-info {
@@ -403,7 +446,7 @@
         padding: 7rem 6rem;
       }
       @include isGiant {
-        padding: 12rem 10rem;
+        padding: 12rem 8rem;
       }
 
       .sec-logo {

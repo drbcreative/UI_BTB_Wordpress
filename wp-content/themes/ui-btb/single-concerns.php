@@ -9,7 +9,7 @@
     </div>
   </div>
 </section>
- 
+
 
 <div class="interior-bg pagesection fade-up-stop">
   <div class="container">
@@ -42,7 +42,7 @@
             <ul class="related-treatments">
                 <?php foreach ( $treatments as $treatment ) : ?>
                     <li>
-                        <a href="<?php echo $treatment->permalink; ?>" class="ui-btn"><?php echo $treatment->name ?></a>
+                        <a href="<?php echo $treatment->permalink; ?>" class="ui-btn ui-btn-main"><?php echo $treatment->name ?></a>
                     </li>
                 <?php endforeach ?>
             </ul>

@@ -33,12 +33,15 @@ section.main-title {
     text-align: center;
 
     @include isSmall {
-      font-size: 3.7rem;
-      line-height: 5rem;
+      font-size: 2.7rem;
+      line-height: 3rem;
     }
   }
   p {
     color: $color-copy;
+    font-family: $font-primary;
+    line-height: 1.5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -144,6 +147,12 @@ section.main-title {
   }
 }
 
+#treated-by {
+  h2 {
+    margin-top: 2rem !important;
+  }
+}
+
 .pagesection {
   padding: 60px 15px;
   // background-image: url(../../img/rabg@2x.jpg);
@@ -179,12 +188,12 @@ section.main-title {
   // }
 
   a:not(.ui-btn) {
-    color: $color-light-accent;
+    color: $color-main;
     font-weight: 600;
 
     &:hover {
       text-decoration: underline;
-      color: $color-dark;
+      color: $color-accent;
     }
   }
 }
@@ -336,7 +345,7 @@ video.videotag-image {
 }
 
 ul.related-treatments {
-  overflow: auto;
+  // overflow: auto;
 }
 
 .related-treatments li {
@@ -640,6 +649,7 @@ span.prev.slick-arrow {
     border-radius: 0;
     padding-left: 1rem;
     margin-bottom: .5rem;
+    width: 100%;
     @include isLarge {
       width: 650px;
     }
@@ -1243,8 +1253,17 @@ span.prev.slick-arrow {
   }
 
   .block-relation {
-    background: #F6FBFD;
+    background-color: rgba(225, 224, 223, 0.1);
     padding: 0 0 2rem;
+
+    h4 {
+      font-size: 32px;
+      color: $color-main;
+    }
+
+    hr {
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -1429,7 +1448,10 @@ sub {
 }
 .wp-block-columns{
   display:flex;
-  flex-wrap:wrap
+  flex-wrap:wrap;
+  strong {
+    font-weight: 700;
+  }
 }
 @media (min-width:782px){
   .wp-block-columns{
@@ -2468,6 +2490,7 @@ hr{
     a {
       color: $color-main;
       text-decoration: none;
+      line-height: 2rem;
 
       &:hover {
         color: $color-accent;
@@ -2501,11 +2524,11 @@ hr{
   }
 
   a {
-    color: $color-light-accent;
+    color: $color-main;
     text-decoration: none!important;
 
     &:hover {
-      color: $color-dark;
+      color: $color-accent;
     }
   }
 }
@@ -2618,7 +2641,11 @@ hr{
   .entry-content{
     ul { padding-left: 15px; list-style:none; margin-bottom: 2rem}
     li {
-      margin: 0 0 10px 0;
+      margin: 0 0 10px 2rem;
+      font-family: $font-primary;
+      font-size: 18px;
+      line-height: 24px;
+      color: $color-copy;
       // &:before {
       //   font-family: 'Font Awesome 5 Free';
       //   content: "\f043";

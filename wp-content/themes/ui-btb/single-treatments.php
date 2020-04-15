@@ -49,7 +49,7 @@
         <ul>
           <?php foreach ( $providers as $provider ) : ?>
           <li>
-            <a href="<?php echo $provider->permalink; ?>" class="ui-btn ui-btn-main"><?php echo $provider->name ?></a>
+            <a href="<?php echo $provider->permalink; ?>" class="ui-btn-main"><?php echo $provider->name ?></a>
           </li>
           <?php endforeach ?>
         </ul>
@@ -63,7 +63,7 @@
         <ul class="related-treatments">
           <?php foreach ( $conditions as $condition ) : ?>
           <li>
-            <a href="<?php echo $condition->permalink; ?>" class="ui-btn ui-btn-main"><?php echo $condition->name ?></a>
+            <a href="<?php echo $condition->permalink; ?>" class="ui-btn-main"><?php echo $condition->name ?></a>
           </li>
           <?php endforeach ?>
         </ul>
@@ -77,7 +77,7 @@
         <ul>
           <?php foreach ( $locations as $location ) : ?>
           <li>
-            <a href="<?php echo $location->permalink; ?>" class="ui-btn ui-btn-main"><?php echo $location->name ?></a>
+            <a href="<?php echo $location->permalink; ?>" class="ui-btn-main"><?php echo $location->name ?></a>
           </li>
           <?php endforeach ?>
         </ul>
@@ -111,12 +111,18 @@
       </div>
       <?php endif ?>
 
-      <div class="col-sm-12">
-        <hr />
-        <sup>* Individual results may vary; not a guarantee.</sup>
-        <?php get_template_part( 'widgets/share' ); ?>
-        <?php get_template_part( 'widgets/edit' ); ?>
-      </div>
+      <?php if(is_single(array(17, 18, 19, 20)) ): ?>
+
+        <div class="col-sm-12">
+          <hr />
+          <sup>* Individual results may vary; not a guarantee.</sup>
+          <?php get_template_part( 'widgets/share' ); ?>
+          <?php get_template_part( 'widgets/edit' ); ?>
+        </div>
+
+      <?php endif; ?>
+
+
     </div>
   </div>
 </div>

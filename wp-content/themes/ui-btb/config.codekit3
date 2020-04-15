@@ -2687,12 +2687,12 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/page-contact-us.php": {
+	"/page-contact.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-contact-us.php",
+		"oAP": "/page-contact.php",
 		"oF": 0
 		},
 	"/page-payment-portal.php": {
