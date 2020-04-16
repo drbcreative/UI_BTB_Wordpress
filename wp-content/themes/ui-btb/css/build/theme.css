@@ -5811,6 +5811,9 @@ form#searchform {
 /* -------------------------------------------------------------------------- */
 /* Inner pages align images */
 /* -------------------------------------------------------------------------- */
+.pagesection strong {
+  font-weight: 700; }
+
 .pagesection .text-center {
   text-align: center; }
 
